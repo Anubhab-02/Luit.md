@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    padding-inline: 1.2rem;
+    margin-left: 0.4rem;
+    background-color: rgb(103, 190, 217);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn_1 {
+    margin-left: 1.2rem;
+}
+
+.demo {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+
+.md_editor_box {
+    width: 50vw;
+    padding-left: 2rem;
+}
+
+.md_output_box {
+    width: 50vw;
+}
+
+
+.output_title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-inline: 2rem;
+    margin-top: 1rem;
+}
+
+#output {
+    border: 1px solid rgb(201, 201, 201);
+    overflow-wrap: break-word;
+    margin-inline: 2rem;
+    margin-top: 0.5rem;
+    height: 78vh;
+    border-radius: 3px;
+    padding: 1.8rem;
+    overflow-y: scroll;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+}
+
+.custom-file-input {
+    color: transparent;
+    padding-inline: 1rem;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Import file';
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    background: rgb(151, 151, 151);
+    border-radius: 10px;
+    padding: 0.8rem;
+    padding-inline: 1.4rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+
+}
+
+.custom-file-input:hover::before {
+    border-color: rgb(186, 186, 186);
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+
+
+
+
+.CodeMirror {
+    width: 100%;
+    height: 75vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+.read{
+    position: absolute;
+    width: 95vw;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+}
+
+.editor{
+    display: none;
+}
+
+
+
+
+#myButton{
+    width: 5rem;
+    margin-top: 1.9rem;
+    margin-left: 2.5rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .demo{
+        margin-bottom: 1rem;
+    }
+
+    .custom-file-input{
+        width: 8rem;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luit.md</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Markdown.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+   
+    <div class="demo">
+        <div id="editor" class="md_editor_box">
+            
+                <textarea id="scientific-editor"></textarea>
+           
+            <button class="btn_1" onclick="render()">Render</button>
+            <button onclick="saveAs()">Save</button>
+            <button onclick="exportAsHTML()">Export</button>
+           
+            <input class="custom-file-input" type="file" onchange="openFile(event)" />
+        </div>
+        <div id="Renderer" class="md_output_box">
+            <span class="output_title">Rendered Output:</span>
+            <div id="output"><div id="A4"> </div></div>
+            <button id="myButton" onclick="toggleClass()">Read</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-mathjax"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="Markdown.js"></script>
+</body>
+
+</html>
